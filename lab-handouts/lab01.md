@@ -46,28 +46,7 @@ function calculatePrice(milesPerGallon, year, milesDriven) {
 
 ### Task 3
 
-#### Using Git Flow
-
-1. At the top of your VS Code window select the **Terminal** tab and click **New Terminal**. This will open a terminal window directly in your VS Code.
-2. Run the command below to add the `skills.js` file to the GitHub repo
-
-```
-git add skills.js
-```
-
-3. Commit the changes to the repo
-
-```
-git commit -m "My first copilot commit."
-```
-
-4. Push the code to the repo
-
-```
-git push
-```
-
-5. Wait approx. 1 minute and refresh your GitHub repository to ensure that the changes are reflected in your repository
+1. Commit your changes to GitHub
 
 #### Using the VS Code Interface
 
