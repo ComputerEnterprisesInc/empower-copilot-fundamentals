@@ -25,16 +25,4 @@ Create hello_world() functions in C# and Python. Detail the differences between 
 
   3b. Prompt Copilot Chat to translate the above C# code into Python code
 
-  3c. Add the newly translated code into a new file named `SIR.py`
-
-### Task 3
-
-4. Save your changes and commit your code
-
-    #### Using the VS Code Interface
-
-    1. Click the VS Code **Source Control** tab on the left hand of your VS Code screen or press `Ctrl + Shift + G` 
-    2. Stage your changes by clicking the small plus icon in the righthand corner of the panel
-    3. Enter a commit message and select the **Commit** button
-    4. Once changes are staged, click the elipses in the far right corner, choose **Push** and enter your password
-    5. Wait approx. 1 minute and refresh your GitHub repository to ensure that the changes are reflected in your repository
+  3c. Add the newly translated code into a new file named `SIR.py` and save

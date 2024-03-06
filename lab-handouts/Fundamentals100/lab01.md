@@ -8,7 +8,7 @@ In this exercise, you will have the opportunity to experiment with and apply Jav
 
 ### Task 1
 
-1. From the VS Code Explorer window, create a new file
+1. Create a new file
 2. Name the file `skills.js` and verify that it is empty
 3. In the `skills.js` file, type the following function declaration. A whole function body will be suggested by GitHub Copilot (shown in gray text). Precise recommendations will vary
 
@@ -144,17 +144,3 @@ def prime(n):
 ***Note:** Some suggestions provided by GitHub Copilot will be more accurate to your use case than others, please review code carefully to ensure that you are accepting code that will work correctly for your development needs.
 
 3. Save the file.
-
-### Task 3
-
-1. Push your code to the repository using the method provided below
-
-    #### Using Git Flow
-
-    #### Using the VS Code Interface
-
-    1. Click the VS Code **Source Control** tab on the left hand of your VS Code screen or press `Ctrl + Shift + G` 
-    2. Stage your changes by clicking the small plus icon in the righthand corner of the panel
-    3. Enter a commit message and select the **Commit** button
-    4. Once changes are staged, click the elipses in the far right corner, choose **Push** and enter your password
-    5. Wait approx. 1 minute and refresh your GitHub repository to ensure that the changes are reflected in your repository

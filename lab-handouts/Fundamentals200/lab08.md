@@ -1,4 +1,4 @@
-# Improve code with GitHub Copilot
+# Improve Code with GitHub Copilot
 
 ## Bug Fixes - MotionTracking.java
 
@@ -52,18 +52,6 @@ Are there any issues in the selected code?
 
 5. Accept each of the suggestions given, ensuring that they address all of the bugs mentioned above
 
-### Task 4
-
-6. Save your changes and commit your code 
-
-    #### Using the VS Code Interface
-
-    1. Click the VS Code **Source Control** tab on the left hand of your VS Code screen or press `Ctrl + Shift + G` 
-    2. Stage your changes by clicking the small plus icon in the righthand corner of the panel
-    3. Enter a commit message and select the **Commit** button
-    4. Once changes are staged, click the elipses in the far right corner, choose **Push** and enter your password
-    5. Wait approx. 1 minute and refresh your GitHub repository to ensure that the changes are reflected in your repository
-
 ## Refactoring Complex Code
 
 ### Task 1
@@ -76,18 +64,6 @@ Are there any issues in the selected code?
 Refactor the selected code
 ```
 
-### Task 2
-
 4. Accept the changes suggested by GitHub Copilot
 
-### Task 3
-
-5. Save your changes and commit your code
-
-    #### Using the VS Code Interface
-
-    1. Click the VS Code **Source Control** tab on the left hand of your VS Code screen or press `Ctrl + Shift + G` 
-    2. Stage your changes by clicking the small plus icon in the righthand corner of the panel
-    3. Enter a commit message and select the **Commit** button
-    4. Once changes are staged, click the elipses in the far right corner, choose **Push** and enter your password
-    5. Wait approx. 1 minute and refresh your GitHub repository to ensure that the changes are reflected in your repository
+5. Save the file

@@ -45,3 +45,17 @@
 ### Optimizing Copilot Usage
 - **Tips for Maximizing Productivity with Copilot:** Strategies for maximizing developer productivity and efficiency when using GitHub Copilot, including time-saving techniques and workflow optimizations 
 - **Avoiding Common Pitfalls/Misconceptions:** Identification and avoidance of common pitfalls and misconceptions associated with GitHub Copilot usage, ensuring optimal performance and effectiveness
+
+## Self-Paced Labs
+
+### Fundamentals 100
+- **Lab 01:** Experimenting with JavaScript AI Code Suggestions
+- **Lab 02:** Generating ARM and Terraform Code with GitHub Copilot Chat
+- **Lab 03:** Code Refactoring with GitHub Copilot
+
+### Fundamentals 200
+- **Lab 04:** Creating Unit Test Functions and Test-Driven Development (TDD) with GitHub Copilot Chat
+- **Lab 05:** Documentation with GitHub Copilot
+- **Lab 06:** Doc to Code with GitHub Copilot
+- **Lab 07:** Translation with GitHub Copilot
+- **Lab 08:** Improving Code with GitHub Copilot

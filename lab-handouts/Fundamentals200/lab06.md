@@ -66,14 +66,4 @@ class Program
 
 In this program, the SIRModel class represents the SIR model. The Calculate method calculates the SIR model over a given number of steps, with each step representing a time interval specified by timeStep. The Main method creates an instance of the SIRModel class and calls the Calculate method to calculate the SIR model. The results are printed to the console at each step.
 
-### Task 3
-
-5. Save your changes and commit your code
-
-    #### Using the VS Code Interface
-
-    1. Click the VS Code **Source Control** tab on the left hand of your VS Code screen or press `Ctrl + Shift + G` 
-    2. Stage your changes by clicking the small plus icon in the righthand corner of the panel
-    3. Enter a commit message and select the **Commit** button
-    4. Once changes are staged, click the elipses in the far right corner, choose **Push** and enter your password
-    5. Wait approx. 1 minute and refresh your GitHub repository to ensure that the changes are reflected in your repository
+4. Save the file
