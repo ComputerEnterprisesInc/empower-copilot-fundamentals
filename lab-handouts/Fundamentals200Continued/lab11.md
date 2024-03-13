@@ -1,103 +1,111 @@
-# Code Optimization with GitHub Copilot
+# Data Generation with GitHub Copilot
 
 ## Introduction
 
-GitHub Copilot can be used for a variety of refactoring tasks - including optimization, or the process of making our code and software more efficient. It is possible to ask GitHub Copilot to analyze the runtime of certain pieces of code, and make refactoring changes accordingly.
+To utilize Copilot for data generation, you can start by describing your data generation needs and write code that outlines the process. Copilot will then provide code suggestions based on the context you've provided. ​There are many ways to utilize GitHub Copilot for data generation, including: 
 
-### Task 1 - Merge Sort
+- Mock data generation
+- Generating random numbers
+- Data validation
+- Data transformation
+- Generating user profiles
+- Database query generation
+- Complex data structures
+- Data formatting
+​
+### Task 1 - Mock Data Generation & Generating Random Numbers
 
-1. Open `unoptimized.py` in the `lab-files` directory
+1. Open the `employee_evaluation.py` file in the `lab-files` directory.
 
-2. Analyze the `merge_sort()` function. 
+This program is meant to generate an employee evaluation based on a few factors: 
+- Employee name
+- Job title
+- Performance score
+- Areas of improvement (either time management, communication, technical writing, or technical skills)
 
-This is an unoptimized version of the merge sort algorithm in Python. It does not use any of the common optimizations such as avoiding the creation of new lists in each recursive call.
+Currently, this program does not have any way of generating these factors. Let's use GitHub Copilot to generate some mock data for testing purposes!
 
-3. Determine the time complexity of this sorting algorithm --> O(n log n) because the array is always divided into two halves and these halves are recursively sorted and merged. 
+2. Select the code in `employee_evaluation.py` and prompt GitHub Copilot Chat to generate a function for creating mock data for the function parameters, name this function `generate_mock_data()`:
+- `Generate a function that will create mock data for the generate_employee_evaluation() parameters. Areas of improvement should either be: time management, communication, technical writing, or technical skills`
 
-4. Prompt GitHub Copilot Chat to answer research questions regarding merge sort algorithms: 
-- `What is the best case time complexity for a merge sort algorithm?`
+This prompt _should_ generate a function that uses the `random` library. Such as below: 
 
-5. In the `unoptimized.py` file, select all of the code for the `merge_sort()` function. Prompt GitHub Copilot Chat to refactor the code so that it is optimized
-- `Optimize the selected code`
+```
+import random
 
-6. Add the optimized code into a new file named `optimized.py`
+def generate_mock_data():
+    names = ["John Doe", "Jane Smith", "Bob Johnson", "Alice Williams", "Charlie Brown"]
+    job_titles = ["Software Engineer", "Data Analyst", "Project Manager", "Product Owner", "QA Engineer"]
+    areas_of_improvement_options = ["time management", "communication", "technical writing", "technical skills"]
 
-7. Select the newly optimized code and prompt GitHub Copilot Chat to analyze the function time complexity: 
-- `What is the time complexity of the selected code?`
+    name = random.choice(names)
+    job_title = random.choice(job_titles)
+    performance_score = round(random.uniform(1, 5), 2)  # Score between 1 and 5
+    areas_of_improvement = random.sample(areas_of_improvement_options, random.randint(1, len(areas_of_improvement_options)))  # 1 to 4 areas of improvement
 
-8. Compare the answer from step 4 to step 7, determining if GitHub Copilot was able to refactor for optimization. If the algorithm is not optimized, reprompt GitHub Copilot to create an optimized function
+    return name, job_title, performance_score, areas_of_improvement
+```
 
-9. Save `optimized.py`
+3. Reprompt GitHub Copilot Chat to use the `random` library if the its first suggestion does not
 
-### Task 2 - Insertion Sort
+4. Add the import statement and function to the `employee_evaluation.py` file
 
-1. Open `unoptimized.py` in the `lab-files` directory
+5. Prompt inline GitHub Copilot Chat (Ctrl + I) to add the new function to the main method, so that the program can be run
+- `Add the generate_mock_data() function to the main method so that the program can be run`
 
-2. Analyze the `insertion_sort()` function. 
+6. Save the `employee_evaluation.py` file
 
-This is an unoptimized version of the insertion sort algorithm in Python. It does not use any of the common optimizations such as shifting elements over in place instead of swapping or breaking the inner loop when the correct position is found.
 
-3. Determine the time complexity of this sorting algorithm --> O(n^2)
+### Task 2 - Data Validation, and Formatting
 
-4. Prompt GitHub Copilot Chat to answer research questions regarding merge sort algorithms: 
-- `What is the best case time complexity for a insertion sort algorithm?`
+Still in `employee_evaluation.py` add functionality for supervisors/reviewers to add their own information to the evaluation: 
 
-5. In the `unoptimized.py` file, select all of the code for the `insertion_sort()` function. Prompt GitHub Copilot Chat to refactor the code so that it is optimized
-- `Optimize the selected code`
+1. Select all of the code in `employee_evaluation.py` and prompt GitHub Copilot Chat to create a function named `reviewer_information_input()` for reviewers to input their information
+- `Create a function that will allow reviewers to input their personal information, including: Name, title, and email`
 
-6. Add the optimized code into the file named `optimized.py`
+2. Add the `reviewer_information_input()` function generated by GitHub Copilot to the `employee_evaluation.py` file. Prompt inline GitHub Copilot Chat (Ctrl + I) to add the new function to the employee evaluation:
+- `Add the reviewer_information_input() function to the employee evaluation`
 
-7. Select the newly optimized code and prompt GitHub Copilot Chat to analyze the function time complexity: 
-- `What is the time complexity of the selected code?`
+3. Select the `reviewer_information_input()` function and prompt GitHub Copilot Chat to validate the given email address:
+- `Add code to the selected function to validate the email address`
 
-8. Compare the answer from step 4 to step 7, determining if GitHub Copilot was able to refactor for optimization. If the algorithm is not optimized, reprompt GitHub Copilot to create an optimized function
+4. Select all of the code in the `employee_evaluation.py` and prompt GitHub Copilot Chat to create a new function to take company and date details as input named `company_day_details()`, add the function to the `employee_evaluation.py` file: 
+- `Create a function that will allow a user to input the company name, date of document completion, and date for future employee review`
 
-9. Save `optimized.py`
+5. Prompt inline GitHub Copilot Chat (Ctrl + I) to add the new `company_day_details()` function to the employee evaluation: 
+- `Add the company_day_details() to the employee evaluation`
 
-### Task 3 - Selection Sort
+6. Select the code in the `employee_evaluation.py` and prompt inline GitHub Copilot Chat (Ctrl + I) to format the dates in the Month, Day, Year, format:
+- `Format all dates as "Month, date, year" in the employee evaluation. The dates should look like this: May 1st, 2024`
 
-1. Open `unoptimized.py` in the `lab-files` directory
+7. Accept the changes, and save the `employee_evaluation.py` file
 
-2. Analyze the `selection_sort()` function. 
 
-This is an unoptimized version of the selection sort algorithm in Python. It does not use any of the common optimizations such as breaking the outer loop when the array is already sorted.
+### Task 3 - Complex Data Structures
 
-3. Determine the time complexity of this sorting algorithm --> O(n^2)
+Adding in data structures can be beneficial for data management, and ease of understanding. Let's add in a JSON object to our `employee_evaluation.py` file!
 
-4. Prompt GitHub Copilot Chat to answer research questions regarding merge sort algorithms: 
-- `What is the best case time complexity for a selection sort algorithm?`
+1. Add functionality for our areas of improvement to correspond to an abbreviation as follows: 
+- time management --> TM
+- communication --> COMM
+- technical writing --> TECH-W
+- technical skills --> TECH-S
 
-5. In the `unoptimized.py` file, select all of the code for the `selection_sort()` function. Prompt GitHub Copilot Chat to refactor the code so that it is optimized
-- `Optimize the selected code`
+2. Select the code in the `generate_mock_data()` function and prompt GitHub Copilot Chat to modify the function to use a dictionary for the areas of improvement:
 
-6. Add the optimized code into the file named `optimized.py`
+```
+Modify the selected code to use a dictionary for areas of improvement. Areas of improvement should correspond to an abbreviation as follows: 
+- time management --> TM
+- communication --> COMM
+- technical writing --> TECH-W
+- technical skills --> TECH-S
 
-7. Select the newly optimized code and prompt GitHub Copilot Chat to analyze the function time complexity: 
-- `What is the time complexity of the selected code?`
+Return the abreviation of the randomized area of improvement.
+```
 
-8. Compare the answer from step 4 to step 7, determining if GitHub Copilot was able to refactor for optimization. If the algorithm is not optimized, reprompt GitHub Copilot to create an optimized function
+3. Add the newly suggested code to the file, replacing the old `generate_mock_data()` function
 
-9. Save `optimized.py`
+4. Run the `employee_evaluation.py` file and troubleshoot as needed, prompting GitHub Copilot for help on any errors or formatting issues that are encountered. The final program should print an employee evaluation in the terminal:
+- `python employee_evaluation.py`
 
-### Task 4 - Bubble Sort
-
-1. Open `unoptimized.py` in the `lab-files` directory
-
-2. Analyze the `bubble_sort()` function. 
-
-This is an unoptimized version of the bubble sort algorithm in Python. It does not use any of the common optimizations such as stopping the algorithm if the inner loop didn't cause any swap.
-
-3. Determine the time complexity of this sorting algorithm --> O(n^2)
-
-4. Prompt GitHub Copilot Chat to answer research questions regarding merge sort algorithms: 
-- `What is the best case time complexity for a bubble sort algorithm?`
-
-5. In the `unoptimized.py` file, select all of the code for the `bubble_sort()` function. Prompt GitHub Copilot Chat to refactor the code so that it is optimized
-- `Optimize the selected code`
-
-6. Add the optimized code into the file named `optimized.py`
-
-7. Select the newly optimized code and prompt GitHub Copilot Chat to analyze the function time complexity: 
-- `What is the time complexity of the selected code?`
-
-8. Compare the answer from step 4 to step 7, determining if GitHub Copilot was able to refactor for optimization. If the algorithm is not optimized, reprompt GitHub Copilot to create an optimized function
+5. Save any changes that you make, and rerun as necessary
