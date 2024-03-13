@@ -44,21 +44,10 @@ function calculatePrice(milesPerGallon, year, milesDriven) {
 }
 ```
 
-### Task 3
 
-1. Commit your changes to GitHub
+### Task 3: 
 
-#### Using the VS Code Interface
-
-1. Click the VS Code **Source Control** tab on the left hand of your VS Code screen or press `Ctrl + Shift + G` 
-2. Stage your changes by clicking the small plus icon in the righthand corner of the panel
-3. Enter a commit message and select the **Commit** button
-4. Once changes are staged, click the elipses in the far right corner, choose **Push** and enter your password
-5. Wait approx. 1 minute and refresh your GitHub repository to ensure that the changes are reflected in your repository
-
-### Task 4: 
-
-1. From the VS Code Explorer, create a **New File**, name your file `index.js` and verify that the file is empty
+1. Create a **New File**, name your file `index.js` and verify that the file is empty
 2. Press `Ctrl + I` to open GitHub Copilot Chat and paste the following comments to create a basic markdown editor
 
 ```
@@ -93,16 +82,6 @@ console.log(reverseAndCapitalize('hello world'));
 console.log(reverseAndCapitalize('welcome to my test'));
 ```
 
-6. Push your code to the repository using the method provided below:
-
-    #### Using the VS Code Interface
-
-    1. Click the VS Code **Source Control** tab on the left hand of your VS Code screen or press `Ctrl + Shift + G` 
-    2. Stage your changes by clicking the small plus icon in the righthand corner of the panel
-    3. Enter a commit message and select the **Commit** button
-    4. Once changes are staged, click the elipses in the far right corner, choose **Push** and enter your password
-    5. Wait approx. 1 minute and refresh your GitHub repository to ensure that the changes are reflected in your repository
-
 # Leverging Multiple Suggestions with GitHub Copilot
 
 ## Introduction
@@ -112,26 +91,6 @@ While GitHub Copilot offers suggestions for numerous languages and a variety of 
 In this exercise, you will have the opportunity to explore and apply the use of Python in conjunction with Copilot, and you will do so with the benefit of receiving multiple suggestions.
 
 ### Task 1
-
-1. Install the Python extension in VS Code
- - Click on the **Extensions** icon in the activity bar present on the left side of the Visual Studio Code window
- - Search for the **Python** extension in the _Search Extensions in Marketplace_ search box
- - Select **Python** from the list of results that show up and **Install**
-
-2. Create a **New File** named `app.py` and create a new function definition in the file:
-
-```
-def hello():
-```
-
-3. GitHub Copilot will automatically suggest code in gray text. Press Tab to accept the suggestion and then save the file. A suggestion will look similar to the following: 
-
-```
-def hello():
-    return 'Hello, World!'
-```
-
-### Task 2
 
 1. Create a new file named `prime.py` and type the following code: 
 
