@@ -62,7 +62,6 @@
 
 ### Fundamentals 200 Continued
 - **Lab 09:** Exploring GitHub Copilot's Slash Commands
-- **Lab 10:** Data Generation with GitHub Copilot
-- **Lab 11:** Code Optimization with GitHub Copilot
-- **Lab 12:** Debugging Using GitHub Copilot
+- **Lab 10:** Code Optimization with GitHub Copilot
+- **Lab 11:** Data Generation with GitHub Copilot
 
