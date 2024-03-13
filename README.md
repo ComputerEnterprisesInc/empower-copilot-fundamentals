@@ -59,3 +59,10 @@
 - **Lab 06:** Doc to Code with GitHub Copilot
 - **Lab 07:** Translation with GitHub Copilot
 - **Lab 08:** Improving Code with GitHub Copilot
+
+### Fundamentals 200 Continued
+- **Lab 09:** Exploring GitHub Copilot's Slash Commands
+- **Lab 10:** Data Generation with GitHub Copilot
+- **Lab 11:** Code Optimization with GitHub Copilot
+- **Lab 12:** Debugging Using GitHub Copilot
+
